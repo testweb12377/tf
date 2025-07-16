@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Downloader</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #ffffff, #ffe5e5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 480px;
+      text-align: center;
+      border: 2px solid #ff0000ee;
+    }
+
+    h1 {
+      color: #ff0000;
+      margin-bottom: 24px;
+      font-size: 28px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      font-size: 16px;
+      margin-bottom: 20px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #ff0000;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #516669;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <video width="320" height="240" controls>
+      <source
+        src="/Users/oneclick/Downloads/AQOMQ2lnUBB8GvRv0rcwNxIcuYu_DP__XxG8bSg361xD6i6cwujZtNX2N8LIA6epVGzPuTXw4XmxAGpIXZtDnGRG.mp4"
+        type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>📥 តំឡើងវីឌីអូ </h1>
+    <form action="/តំឡើង" method="POST">
+      <input type="text" name="url" placeholder="ដាក់ដំណភ្ជាប់ស្ទ្រីម..." required />
+      <button type="submit">តំឡើង</button>
+    </form>
+    <div class="footer">
+      For educational use only · Powered by sokum
+    </div>
+  </div>
+</body>
+
+</html>
